@@ -218,7 +218,7 @@ main {
 }
 
 .photo {
-    height: 270px;
+    height: 265px;
     object-fit: cover;
     border: 0.25rem solid var(--colorgold);
     border-radius: var(--radius);
@@ -251,7 +251,7 @@ main {
     }
 
     .photo {
-        height: 175px;
+        height: 170px;
     }
 }
 
@@ -262,6 +262,6 @@ main {
     }
 
     .photo {
-        height: 150px;
+        height: 160px;
     }
 }
