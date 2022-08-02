@@ -2,7 +2,7 @@ const menu = [{
         id: 1,
         title: "aloe heat lotion",
         category: "skin-care",
-        price: 64.50,
+        price: 13.29,
         img: "https://flptest.site/media/CACHE/images/catalog/product/photo/36/3654/365408a3/365408a365cb4555/a98b1d22f692c367524ead58076fba07.png",
         desc: "Aloe Heat Lotion is a pH-balanced, lubricating lotion designed for a soothing, relaxing massage."
     },
@@ -116,7 +116,7 @@ function displayMenuButtons() {
             if (!values.includes(item.category)) {
                 values.push(item.category);
             }
-            console.log(values);
+            // console.log(values);
             return values;
 
         },
@@ -133,12 +133,13 @@ function displayMenuButtons() {
     const filterBtns = btnContainer.querySelectorAll(".filter-btn");
     console.log(filterBtns);
 
+    // Filtering items
     filterBtns.forEach(function (btn) {
         btn.addEventListener("click", function (e) {
-            // console.log(e.currentTarget.dataset);
+            // console.log(e.currentTarget.dataset.id);
             const category = e.currentTarget.dataset.id;
             const menuCategory = menu.filter(function (menuItem) {
-                // console.log(menuItem.category);
+                console.log(menuItem.category);
                 if (menuItem.category === category) {
                     return menuItem;
                 }
